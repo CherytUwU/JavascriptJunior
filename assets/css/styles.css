@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root{
+    --font-1: 'Roboto', sans-serif;
+    --font-2: 'Source Sans Pro', sans-serif;
+
+    /* COLORS */
+    --black: #0e0e0e;
+
+    --black-1: #17202A;
+    --black-2: #1C2833;
+    --black-3: #212F3D;
+    --black-4: #273746;
+    --black-5: #2C3E50;
+
+    --white: #f7f7f7;
+    --white-1: #e4e5e7;
+
+    --yellow-principal: #e8b924;
+    --yellow-seconday: #de9c25;
+
+}
+
+*, body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* INFO INIT */
+.init{
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--white);
+}
+
+.init-container{
+    width: 100%; 
+}
+
+.init-background-c{
+    width: calc(100% - 60px);
+    background: linear-gradient(90deg, var(--yellow-seconday) 50%, var(--yellow-principal)50%);
+    border: 30px solid var(--yellow-seconday);
+}
+
+.init-container-margin{
+    margin: 0 40px;
+    width: calc(100% - 80px);
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-mtext{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+}
+
+b.text-hello,
+span.text-lgo{
+    color: var(--black-5);
+    -webkit-text-fill-color: var(--black-5);
+}
+
+.text-hello,
+.text-why,
+.text-lgo{
+    background: linear-gradient(to right, var(--white-1) 0%, var(--white-1) 50%, var(--white) 50%, var(--white) 100% );
+    color: var(--white);
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-2);
+    padding: 10px;
+}
+
+.text-hello{
+    font-size: 5rem;
+}
+
+.text-why{
+    font-size: 3.2rem;
+}
+
+.text-lgo{
+    font-size: 3rem;
+}
+
+h2{
+    font-family: var(--font-2);
+    font-size: 10rem;
+}
